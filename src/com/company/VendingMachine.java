@@ -17,8 +17,8 @@ public class VendingMachine extends Drink {
         this.drinkType = drinkType;
     }
     /*
-     * This method will get the total milk units in the coffee and will determine if more could be added.
-     * If more could be added then it will add it and update the total Condiments in the coffee.
+     * This method will get the total milk units for the drink and will determine if more could be added.
+     * If more could be added then it will add it and update the total Condiments in the drink.
      * */
     @Override
     public void addMilk() {
@@ -31,8 +31,8 @@ public class VendingMachine extends Drink {
         }
     }
     /*
-     * This method will get the total sugar units in the coffee and will determine if more could be added.
-     * If more could be added then it will add it and update the total Condiments in the coffee.
+     * This method will get the total sugar units in the drink and will determine if more could be added.
+     * If more could be added then it will add it and update the total Condiments in the drink.
      * */
     @Override
     public void addSugar() {
@@ -44,6 +44,9 @@ public class VendingMachine extends Drink {
             setTotalNumberOfCondiments(1);
         }
     }
+    /*
+    * This method contains the brewing process for all the drinks.
+    * */
     public void brew(){
 
         if(this.drinkType == AMERICANO)
